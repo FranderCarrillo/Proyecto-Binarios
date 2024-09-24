@@ -1,0 +1,155 @@
+
+footer {
+
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/536/27/desktop-wallpaper-wiki-cars-for-black.jpg'),  linear-gradient(rgba(155, 151, 151, 0), rgba(0, 0, 0, 0)); /* Ruta de la imagen */
+    background-size: cover; /* Abarca todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #1b1717;
+    color: #ffffff;
+    padding: 5px 0px;
+    margin-top: 388px;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+
+
+.footer-left {
+    flex: 1;
+    margin-right: 67px;
+    margin-left: 30px;
+
+}
+
+.footer-middle{
+    align-content: flex-end;
+    text-align: center;
+    flex: 1;
+    margin: 0 30px;
+
+
+} 
+
+
+.footer-right{
+    align-content: flex-end;
+    flex: 1;
+    margin-left:100px;
+    margin-right: 0;
+    margin-top: 40px;
+
+}
+
+/* Parte izquierda: logo y enlaces */
+.logo {
+    display: flex;
+    align-items: start;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    width: 80px;
+    height: 70px;
+    
+}
+
+.logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2e8ece;
+}
+
+.footer-links {
+    padding: 100px;
+    padding: 0px;
+    
+}
+
+.footer-links p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Parte central: botón de suscripción y redes sociales */
+.footer-middle {
+    text-align: center;
+}
+
+.subscribe-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.subscribe-button:hover {
+    background-color: #e60000;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    border-radius: 7px;
+}
+
+/* Parte derecha: información de contacto */
+.footer-right h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-right i {
+    margin-right: 10px;
+}
+
+/* Línea divisoria y copyright */
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-bottom hr {
+    border: 0.5px solid #444;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-bottom p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
