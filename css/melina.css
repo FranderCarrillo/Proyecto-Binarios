@@ -1,5 +1,10 @@
-
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 20vw;
 
     background-image: url('https://e1.pxfuel.com/desktop-wallpaper/536/27/desktop-wallpaper-wiki-cars-for-black.jpg'),  linear-gradient(rgba(155, 151, 151, 0), rgba(0, 0, 0, 0)); /* Ruta de la imagen */
     background-size: cover; /* Abarca todo el contenedor */
@@ -8,27 +13,25 @@ footer {
     background-blend-mode: overlay;
     background-color: #1b1717;
     color: #ffffff;
-    padding: 5px 0px;
-    margin-top: 388px;
+   
     
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
-    max-width: none;
-    margin: 0 auto;
-    padding-left: 0;
+    max-width: 1200px;
+    
+    
 }
 
 
 
 .footer-left {
     flex: 1;
-    margin-right: 67px;
-    margin-left: 30px;
+    margin-right: 80px;
+    margin-left: 10px;
 
 }
 
@@ -81,7 +84,7 @@ footer {
 }
 
 .footer-links p {
-    font-size: 14px;
+    font-size: 12px;
     color: #ccc;
 }
 
@@ -116,7 +119,7 @@ footer {
 
 .social-icons img {
     width: 24px;
-    border-radius: 7px;
+    border-radius: 6px;
 }
 
 /* Parte derecha: información de contacto */
@@ -139,7 +142,7 @@ footer {
 .footer-bottom {
     text-align: center;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .footer-bottom hr {
