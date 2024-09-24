@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    background-color: #141301;
+    color: #e5e7e6;
+}
+
+#principal-container{
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 15%;
+
+    grid-template-areas: 
+    "main"
+    "footer";
+}
+
+main {
+    grid-area: main;
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    grid-area: footer;
+}

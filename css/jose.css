@@ -1,0 +1,111 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+
+    background-color: #e5e7e6;
+    border-radius: 16px;
+
+    position: fixed; /* Fija el header */
+    top: 0; /* En la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+nav .material-symbols-outlined{
+    position: relative; /* Necesario para posicionar el tooltip */
+    display: inline-block;
+    cursor: pointer;
+    color: #141301;
+    font-size: 36px;
+}
+
+/* Oculta el texto del tooltip por defecto */
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+
+    /* Posiciona el tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 125%; /* Coloca el tooltip por debajo del icono */
+    left: 50%;
+    margin-left: -60px; /* Centra el tooltip */
+
+    /* Efecto de desvanecimiento */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Flecha del tooltip */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* Ahora la flecha aparece encima del tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+/* Muestra el tooltip cuando el usuario pasa el ratón por encima del ícono */
+.material-symbols-outlined:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+header a{
+    text-decoration: none;
+    color: #141301;
+    transition: transform 5.s ease;
+    cursor: pointer;
+}
+
+#imgLogo{
+    height: 60px;
+}
+
+#parte-jose-casa{
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+}
+
+#carruzel01_img01{
+    width: 40%;
+}
+
+#mydiv-carruzel01_images{
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+}
+
+#mysubdiv-carruzel01_images{
+    display: flex;
+}
+
+#carruzel01_img02{
+    width: 60%;
+}
+
+#carruzel01_img03{
+    width: 40%;
+}
+
+#carruzel01_img04{
+    width: 100%;
+}
