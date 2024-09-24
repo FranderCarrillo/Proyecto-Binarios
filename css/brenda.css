@@ -2,8 +2,6 @@
 #parte-brenda-sobre{
     display:flex;
     flex-direction:column;
-    grid-area: about;
-
     height: 100vh;
     width: 100%;
     background-color: #E5E7E6;
