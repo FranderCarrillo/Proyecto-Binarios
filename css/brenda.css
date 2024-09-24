@@ -1,15 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body{
-    background-color:#E5E7E6;
-}
 #parte-brenda-sobre{
     display:flex;
     flex-direction:column;
+    grid-area: about;
 
     height: 100vh;
     width: 100%;
@@ -64,6 +57,12 @@ body{
     height: 100%;
     width: 30%;
 }
+.description-iconic p{
+    color:black;
+}
+.description-iconic h2{
+    color: black;
+}
 
 button{
     border: 2px solid black;
@@ -86,7 +85,7 @@ button{
     height: 55vh;
     width: 100%;
 
-    background-image: url(/img/image1-2.png);
+    background-image: url(/photos/img-brenda/image1-2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
