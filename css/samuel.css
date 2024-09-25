@@ -1,13 +1,15 @@
-.main-samu{
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#main-section-samu{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40% 60%;
     grid-template-areas: 
-    "My-section-up .   ."
-    "My-section-down  My-section-down My-section-down";
-    height: 100vh;
+    " My-section-left  My-section-right"
+    "My-section-left  My-section-right";
+    height: 100vh; 
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
 }
-.main-samu::before{
+#main-section-samu::before{
     background-image: url(https://images.pexels.com/photos/1633601/pexels-photo-1633601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -16,59 +18,89 @@
     position: absolute;
     width: 100%;
     height: 100%; 
+    padding: 0;
+    margin: 0;
     filter: blur(4px);
     z-index: -1;
-}
-
-.My-section-up{
-    grid-area: My-section-up;
+} 
+.My-section-left{
+    grid-area: My-section-left;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: 100%;
     z-index: 1;
+    height: 100%;
+    width: 100%;
 }
-.My-section-down{
-    grid-area: My-section-down;
+.My-section-right{
+    grid-area: My-section-right;
     display: flex;
-    gap: 40%;
-    justify-content:space-evenly;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
-    height: 100%;
+    gap: 80px;
     z-index: 1;
+    height: 100%;
+    padding: 10px;
 } 
 .Comentarios{
-    border: solid 2px #E5E7E6;
     border-radius: 10px;
     padding: 20px;
-    background-color: rgba(183,181, 171, 0.4); 
+    background-color: rgba(55,63, 81,0.6); 
     height: 200px; 
     width: 300px;
+    color: #E5E7E6;
 }
-.informacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: large;
-    gap: 16px;
-    color:#141301;
+
+#img-1{
+    background-image: url(https://th.bing.com/th/id/R.f04550c45ff5b667a280f2f5b423a081?rik=7QvJazs9VIMfag&riu=http%3a%2f%2fd1poh340f4imgl.cloudfront.net%2fupload%2fimages%2foriginales%2f2015%2f04%2f06%2f5c735a92362ff628d35a25b3f0bd11b6.jpg&ehk=qc9P4iZDED8WR5gxlA0h0epl5HrdUIOA431ZReOcUE4%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1); 
+    background-size: cover;
+    border: solid 1px black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+#img-2{
+    background-image: url(https://i.pinimg.com/originals/1a/13/ab/1a13ab9dc62d749e6a96b86947ea7bef.jpg); 
+    background-size: cover;
+    border: solid 1px black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+#img-3{
+    background-image: url(https://i.pinimg.com/originals/6c/58/c2/6c58c22f2cc63fd37c4e49fdfba319bb.jpg); 
+    background-size: cover;
+    border: solid 1px black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }
 .cuestionerio{
     display: flex;
     gap: 30px;
     flex-direction: column;
     width: 200px;
-    color:  #E5E7E6;
+    color:#E5E7E6;
+    gap:40px;
 }
-.a{
-    color: #141301;
+button{
+    border: 2px solid black;
+    background-color: #E5E7E6;
+    font-weight: bolder;
+    height: 30px;
+    width: 110px;
+    cursor:pointer;
+    transition: .3s linear;
+}
+.label-samu{
+    font-size: x-large;
 }
 
 input{
     font-size:large;
-    height: 35px;
+    height: 50px;
+    width: 200%;
     border-radius: 8px;
 }
