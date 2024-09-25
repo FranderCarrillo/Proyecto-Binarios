@@ -37,9 +37,8 @@
     grid-area: My-section-right;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
-    gap: 80px;
     z-index: 1;
     height: 100%;
     padding: 10px;
@@ -103,4 +102,7 @@ input{
     height: 50px;
     width: 200%;
     border-radius: 8px;
+}
+#reseña{
+    height: 70px;
 }
