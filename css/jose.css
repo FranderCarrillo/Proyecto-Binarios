@@ -5,7 +5,8 @@ nav{
     gap: 8%;
 
     background-color: #e5e7e6;
-    border-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
 
     position: fixed; /* Fija el header */
     top: 0; /* En la parte superior */

@@ -37,16 +37,16 @@
     background-repeat: no-repeat;
     opacity:0.9;
     background-size: cover;*/
-    border-top-right-radius: 8px;
-    border-bottom-right-radius:8px ;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px ;
     background-color: #141301; 
     height: 100%;
     width: 70%;
 }
 
 .cars{
-    height: 80%;
     width: 30%;
+    padding: 2%;
 }
 
 .description-iconic{
