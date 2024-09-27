@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -12,7 +17,7 @@ body{
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 15%;
+    grid-template-rows: 1fr  10%;
 
     grid-template-areas: 
     "main"
@@ -27,4 +32,8 @@ main {
 
 footer{
     grid-area: footer;
+}
+
+html{
+    scroll-behavior: smooth;
 }
