@@ -59,7 +59,10 @@
     width: 30%;
 }
 .description-iconic p{
+    font-size: 19px;
+    max-width: 70%;
     color:black;
+    line-height: 2.0;
 }
 .description-iconic h2{
     color: black;
