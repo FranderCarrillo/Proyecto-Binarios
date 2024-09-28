@@ -6,13 +6,8 @@ footer {
     width: 100vw;
     height: 20vw;
 
-    background-image: url(''),  linear-gradient(rgba(117, 106, 106, 0), rgb(0, 0, 0)); /* Ruta de la imagen */
-    background-size: cover; /* Abarca todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    background-color: #1b1717;
-    color: #ffffff;
+    
+    
    
     
 }
