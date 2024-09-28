@@ -6,7 +6,7 @@
     " My-section-left  My-section-right"
     "My-section-left  My-section-right";
     height: 100vh; 
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Crimson Text", serif;
     font-style: normal;
 }
 #main-section-samu::before{
@@ -60,6 +60,7 @@
     height: 200px; 
     width: 300px;
     color: #E5E7E6;
+    font-family: "Crimson Text", serif;
 }
 
 #img-1{
@@ -112,6 +113,7 @@ input{
     height: 50px;
     width: 200%;
     border-radius: 8px;
+    font-family: "Crimson Text", serif;
 }
 #reseña{
     height: 70px;

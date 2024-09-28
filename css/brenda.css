@@ -63,9 +63,11 @@
     max-width: 70%;
     color:black;
     line-height: 2.0;
+    font-family: "Crimson Text", serif;
 }
 .description-iconic h2{
     color: black;
+    font-family: "Crimson Text", serif;
 }
 
 button{
