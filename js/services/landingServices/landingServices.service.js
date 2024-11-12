@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/users';
+const baseUrl = 'http://localhost:3000/landing-services';
 
 export const getAll = () =>{
     return fetch(`${baseUrl}`);
