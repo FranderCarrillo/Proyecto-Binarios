@@ -1,4 +1,4 @@
-const text = "Bienvenidos a Ionic Motors";
+const text = "Welcome to Ionic Motors";
     const titleElement = document.getElementById("title");
     let index = 0;
 
