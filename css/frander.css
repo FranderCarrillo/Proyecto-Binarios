@@ -24,10 +24,10 @@
 
 .services-models h2 {
     width: 100%;
-    color: #ffffff;
+    color: #222;
     font-family: "Crimson Text", serif;
-    background-color: #b80c09e6;
-    border-radius: 12px;
+    border-bottom: 4px solid #f85a4f;
+
     padding: 20px 0;
     text-align: center;
     font-size: 36px;
@@ -76,8 +76,7 @@
     clip-path: circle();
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    border: 3px solid #f85a4f; 
+    border: 2px solid blue;
 }
 
 .name-service-card h4 {
@@ -159,4 +158,19 @@
 .details p {
     font-size: 16px;
     font-family: "Crimson Text", serif;
+}
+
+.material-symbols-outlined{
+    color: #222;
+    font-size: 48px;
+}
+
+
+.container-img-service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px; /* Ajusta el tamaño del ícono */
+    height: 100px; /* Tamaño de altura del contenedor */
+    width: 100px;  /* Tamaño de ancho del contenedor */
 }
