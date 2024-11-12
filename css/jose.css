@@ -5,8 +5,8 @@ nav{
     gap: 8%;
 
     background-color: #e5e7e6;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
+    /* border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px; */
 
     position: fixed; /* Fija el header */
     top: 0; /* En la parte superior */
@@ -20,7 +20,7 @@ nav .material-symbols-outlined{
     display: inline-block;
     cursor: pointer;
     color: #141301;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 /* Oculta el texto del tooltip por defecto */
@@ -74,17 +74,65 @@ header a{
 }
 
 #imgLogo{
-    height: 60px;
+    height: 50px;
 }
 
 #parte-jose-casa{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 90vh;
+
+    grid-template-areas: 
+    ". title title ."
+    ". description description ."
+    ". . . ."
+    ". . . .";
 
     padding: 0;
     margin: 0;
+    background-image: url('/photos/Carruzel01/image06.jpg');
+    background-size: cover;
+
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
 }
 
-#carruzel01_img01{
+#parte-jose-casa #section-title {
+    grid-area: title;
+
+    font-size: 40px;
+    color: #e5e7e6;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.7s step-end infinite;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.85);
+    padding-top: 100px;
+    /* text-align: center; */
+}
+
+#parte-jose-casa #section-description {
+    grid-area: description;
+}
+
+#parte-jose-casa #section-description p{
+    font-size: 20px;
+    color: #e5e7e6;
+    text-align: justify;
+}
+
+/* @keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #e5e7e6;
+    }
+} */
+
+/* #carruzel01_img01{
     width: 40%;
 }
 
@@ -109,4 +157,4 @@ header a{
 
 #carruzel01_img04{
     width: 100%;
-}
+} */
