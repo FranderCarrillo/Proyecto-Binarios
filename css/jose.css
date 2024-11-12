@@ -115,10 +115,11 @@ header a{
 
 #parte-jose-casa #section-description {
     grid-area: description;
+    background-color: #14130156;
 }
 
-#parte-jose-casa #section-description p{
-    font-size: 20px;
+#description{
+    font-size: 22px;
     color: #e5e7e6;
     text-align: justify;
 }
