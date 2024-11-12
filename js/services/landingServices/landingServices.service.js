@@ -8,29 +8,30 @@ export const getById = (id) =>{
     return fetch(`${baseUrl}/${id}`);
 }
 
-export const create = (user) =>{
+export const create = (LandingService) =>{
     return fetch(baseUrl, {
         method: 'POST',
         
-        body: JSON.stringify(user),
+        body: JSON.stringify(LandingService),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
         },
     })
 }
 
-export const update = (user) =>{
-    fetch(`${baseUrl}/3`, {
+export const update = (LandingService,id) =>{
+    fetch(`${baseUrl}/${id}`, {
         method: 'PUT',
 
-        body: JSON.stringify(user),
+        body: JSON.stringify(LandingService),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
         },
     })
 }
 
-export const remove = (user) =>{
+export const remove = (LandingService) =>{
+
 
 }
 
