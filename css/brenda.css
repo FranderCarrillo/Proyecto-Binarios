@@ -30,15 +30,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
-    /*border:2px solid black;*/
-    /*background-image: url(/img/image1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity:0.9;
-    background-size: cover;*/
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px ;
     background-color: #141301; 
     height: 100%;
     width: 70%;
