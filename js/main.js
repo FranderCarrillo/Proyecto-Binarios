@@ -26,28 +26,28 @@ const text = "Welcome to Ionic Motors";
             spanResponse.innerHTML = JSON.stringify(users);
         })
     
-        userService.getById(3)
+        userService.getById(2)
         .then(res=>res.json())
-        .then(user=>{
-            console.log(user);
+        .then(LandingService=>{
+            console.log(LandingService);
             //spanResponseId.innerHTML = JSON.stringify(user);
-    
+
             // Prueba
             // Extraer solo los atributos que necesitamos
-            const { firstName, lastName, age } = user;
-    
+            const { icons, tittle, description } = LandingService;
+
             // Crear un nuevo objeto con los atributos seleccionados
-            const datosFiltrados = { firstName, lastName, age };
-    
+            const datosFiltrados = { icons, tittle, description };
+
             // Mostrar el resultado en la consola o utilizarlo en el DOM
             console.log(datosFiltrados); // { nombre: "Juan", edad: 25 }
-    
+
             // Ejemplo: Mostrar en HTML
-            document.getElementById("nombre-usuario").innerHTML = datosFiltrados.firstName;
-            document.getElementById("nombre-usuario").innerHTML = datosFiltrados.lastName;
-            document.getElementById("edad-usuario").innerHTML = datosFiltrados.age;
+            document.getElementById("icon").innerHTML = datosFiltrados.icons;
+            document.getElementById("tittle").innerHTML = datosFiltrados.tittle;
+            document.getElementById("description").innerHTML = datosFiltrados.description;
         })
-    
+        
         const form = document.getElementById('frmUser');
         form.addEventListener('submit', (event)=>{
             
