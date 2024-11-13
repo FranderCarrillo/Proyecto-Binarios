@@ -131,15 +131,16 @@ import * as landingServicesService from "./services/landingServices/landingServi
     
         })
 
-        
-        const selectElement = document.getElementById("opciones");
-        const selectedOption = selectElement.options[selectElement.selectedIndex];
-        
-        // Obtener el valor y el id de la opción seleccionada
-        const valorSeleccionado = selectedOption.value;
-        
-        // Aquí puedes usar valorSeleccionado e idSeleccionado para otra función o lógica
-        console.log("Valor seleccionado:", valorSeleccionado); // Ejemplo de uso
+        function obtenerSeleccionEnTiempoReal() {
+            // Obtener el elemento <select> y la opción seleccionada actualizada
+            const selectElement = document.getElementById("opciones");
+            const valorSeleccionado = selectElement.value; // Obtener el valor actual en tiempo real
+          
+            // Aquí puedes trabajar con el valor seleccionado en tiempo real
+            console.log("Valor seleccionado en tiempo real:", valorSeleccionado); // Solo para prueba, puedes quitarlo
+            return valorSeleccionado;
+        }
+
 
         const formService = document.getElementById('frmLandingService-1');
 
@@ -149,7 +150,7 @@ import * as landingServicesService from "./services/landingServices/landingServi
              const FormProps = Object.fromEntries(formData);
     
              console.log(FormProps);
-             landingServicesService.update(FormProps, valorSeleccionado);
+             landingServicesService.update(FormProps, obtenerSeleccionEnTiempoReal());
     
              event.preventDefault();
     
