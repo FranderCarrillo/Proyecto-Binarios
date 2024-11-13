@@ -116,18 +116,43 @@ import * as landingServicesService from "./services/landingServices/landingServi
             // document.getElementById("p-1").innerHTML = datosHearder.image;
             document.getElementById("parte-jose-casa").style.backgroundImage = `url(${datosHearder.image})`;
         })
-        
-        // const form = document.getElementById('frmUser');
-        // form.addEventListener('submit', (event)=>{
+
+        const formHeader = document.getElementById('frmHearder');
+
+        formHeader.addEventListener('submit', (event)=>{
             
-        //      var formData = new FormData(form);
-        //      const FormProps = Object.fromEntries(formData);
+             var formData = new FormData(formHeader);
+             const FormProps = Object.fromEntries(formData);
     
-        //      console.log(FormProps);
-        //      userService.update(FormProps);
+             console.log(FormProps);
+             headerService.update(FormProps);
     
-        //      event.preventDefault();
+             event.preventDefault();
     
-        // })
+        })
+
+        
+        const selectElement = document.getElementById("opciones");
+        const selectedOption = selectElement.options[selectElement.selectedIndex];
+        
+        // Obtener el valor y el id de la opción seleccionada
+        const valorSeleccionado = selectedOption.value;
+        
+        // Aquí puedes usar valorSeleccionado e idSeleccionado para otra función o lógica
+        console.log("Valor seleccionado:", valorSeleccionado); // Ejemplo de uso
+
+        const formService = document.getElementById('frmLandingService-1');
+
+        formService.addEventListener('submit', (event)=>{
+            
+             var formData = new FormData(formService);
+             const FormProps = Object.fromEntries(formData);
+    
+             console.log(FormProps);
+             landingServicesService.update(FormProps, valorSeleccionado);
+    
+             event.preventDefault();
+    
+        })
     
     });

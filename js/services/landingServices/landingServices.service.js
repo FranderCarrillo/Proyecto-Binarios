@@ -31,5 +31,7 @@ export const update = (LandingService,id) =>{
 }
 
 export const remove = (LandingService) =>{
+
+
 }
 

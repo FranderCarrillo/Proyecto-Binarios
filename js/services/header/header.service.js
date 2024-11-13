@@ -18,8 +18,8 @@ export const create = (header) => {
       });
 }
 
-export const update = (id, header) => {
-    return fetch(`${baseUrl}/${id}`, {
+export const update = (header) => {
+    return fetch(`${baseUrl}/1`, {
         method: 'PUT',
         body: JSON.stringify(header),
         headers: {
