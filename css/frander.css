@@ -6,8 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 3%; /* Reducido para hacer más compacto */
-
+    gap: 1%; /* Reducido para hacer más compacto */
 }
 
 .services-models {
