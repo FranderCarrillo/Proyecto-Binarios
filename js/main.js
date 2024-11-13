@@ -95,7 +95,7 @@ import * as landingServicesService from "./services/landingServices/landingServi
         })
 
         headerService.getById(1)
-        .then(res=>res.json())
+        .then(response=>response.json())
         .then(header=>{
             console.log(header);
             //spanResponseId.innerHTML = JSON.stringify(user);
@@ -111,9 +111,10 @@ import * as landingServicesService from "./services/landingServices/landingServi
             console.log(datosHearder); // { nombre: "Juan", edad: 25 }
 
             // Ejemplo: Mostrar en HTML
-            document.getElementById("icon-1").innerHTML = datosHearder.title;
-            document.getElementById("tittle-1").innerHTML = datosHearder.description;
-            document.getElementById("p-1").innerHTML = datosHearder.image;
+            document.getElementById("title").innerHTML = datosHearder.title;
+            document.getElementById("description").innerHTML = datosHearder.description;
+            // document.getElementById("p-1").innerHTML = datosHearder.image;
+            document.getElementById("parte-jose-casa").style.backgroundImage = `url(${datosHearder.image})`;
         })
         
         // const form = document.getElementById('frmUser');

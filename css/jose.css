@@ -91,7 +91,7 @@ header a{
 
     padding: 0;
     margin: 0;
-    background-image: url('/photos/Carruzel01/image06.jpg');
+    /* background-image: url('/photos/Carruzel01/image06.jpg'); */
     background-size: cover;
 
     align-items: center;

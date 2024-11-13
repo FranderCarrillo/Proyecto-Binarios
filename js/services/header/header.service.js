@@ -1,12 +1,7 @@
 const baseUrl = 'http://localhost:3000/header';
 
 export const getAll = () => {
- return fetch(`${baseUrl}`, {
-      method: 'GET',
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
- });
+ return fetch(`${baseUrl}`);
 }
 
 export const getById = (id) => {
