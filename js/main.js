@@ -1,4 +1,4 @@
-import * as headerService from "./services/header/header.service";
+import * as headerService from "./services/header/header.service.js";
 import * as landingServicesService from "./services/landingServices/landingServices.service.js";
 
 // const text = "Welcome to Ionic Motors";
@@ -47,6 +47,8 @@ import * as landingServicesService from "./services/landingServices/landingServi
             document.getElementById("tittle-1").innerHTML = datosFiltrados.tittle;
             document.getElementById("p-1").innerHTML = datosFiltrados.description;
         })
+
+
         landingServicesService.getById(2)
         .then(res=>res.json())
         .then(LandingService=>{
@@ -68,6 +70,8 @@ import * as landingServicesService from "./services/landingServices/landingServi
             document.getElementById("tittle-2").innerHTML = datosFiltrados.tittle;
             document.getElementById("p-2").innerHTML = datosFiltrados.description;
         })
+
+
         landingServicesService.getById(3)
         .then(res=>res.json())
         .then(LandingService=>{
