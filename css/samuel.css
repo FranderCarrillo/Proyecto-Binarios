@@ -5,8 +5,8 @@
     " My-section-left  My-section-right"
     "My-section-left  My-section-right";
     height: 100vh; 
-    /* font-family: "Crimson Text", serif; */
-    font-weight: bolder;
+    font-family: "Crimson Text", serif;
+    /* font-weight: bolder; */
     font-style: normal;
 }
  #main-section-samu #img1{
@@ -50,8 +50,8 @@
     height: 100px;
     font-size:large;
     background-color: rgba(255, 255, 255,0);
-    /* font-family: "Crimson Text", serif; */
-    font-weight: bolder;
+    font-family: "Crimson Text", serif;
+    /* font-weight: bolder; */
   }
 
 .Comentarios{
@@ -114,7 +114,7 @@ input{
     height: 50px;
     width: 200%;
     /* border-radius: 8px; */
-    /* font-family: "Crimson Text", serif; */
-    font-weight: bolder;
+    font-family: "Crimson Text", serif;
+    /* font-weight: bolder; */
     background-color: rgba(255, 255, 255,0);    
 }
