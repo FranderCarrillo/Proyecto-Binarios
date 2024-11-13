@@ -1,53 +1,49 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+    <link rel="stylesheet" href="/css/admin.css">
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title"></h1>
+    <h1 id="">ICONIC MOTORS</h1>
 
-    GET ALL<br> <br>
-    <span id="json_response"></span>
+    <!-- Sección de GET ALL -->
+    <div class="card">
+        <h3>Administration Page</h3>
+        <span id="json_response"></span>
+    </div>
     <hr />
 
-    GET ONE<br> <br>
-    <!-- <span id="json_responseId"></span> -->
+    <!-- Sección de GET ONE -->
+    <div class="card">
+        <h3>GET ONE</h3>
+        <form action="" id="frmHearder">
+            <input type="text" id="1-Hearder" name="title" class="form-control" placeholder="Enter your new title...">
+            <input type="text" id="2-Hearder" name="description" class="form-control" placeholder="Enter your new description...">
+            <input type="text" id="3-Hearder" name="image" class="form-control" placeholder="Enter your new image...">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
-    <form action="" id="frmHearder">
-        <input type="text" id="1-Hearder"  name="title"  class="form-control" placeholder="Enter your new tittle...">
-        <input type="text" id="2-Hearder"  name="description" class="form-control" placeholder="Enter your new description...">
-        <input type="text" id="3-Hearder"  name="image" class="form-control" placeholder="Enter your new image...">
-        <button type="submit">Submit</button>
-    </form>
-
-
-    <h1>Form Services</h1>
-    <!-- <form action="" id="id-services">
-        <input type="text" id="Id-service"  name="id"  class="form-control" placeholder="Enter your id...">
-        <button type="submit">Submit</button>
-    </form> -->
-
-    <label for="opciones">Selecciona un Id:</label>
-    <select id="opciones" name="opciones">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-    </select>
-
-    <form action="" id="frmLandingService-1">
-        <input type="text" id="1"  name="icons"  class="form-control" placeholder="Enter your icon name...">
-        <input type="text" id="2"  name="tittle" class="form-control" placeholder="Enter your new tittle...">
-        <input type="text" id="3"  name="description" class="form-control" placeholder="Enter your new description...">
-        <button type="submit">Submit</button>
-    </form>
-   
-
-    <!-- <h1 id="title"></h1> -->
+    <!-- Sección de Form Services -->
+    <div class="card">
+        <h3>Form Services</h3>
+        <label for="opciones">Selecciona un Id:</label>
+        <select id="opciones" name="opciones">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <form action="" id="frmLandingService-1">
+            <input type="text" id="1" name="icons" class="form-control" placeholder="Enter your icon name...">
+            <input type="text" id="2" name="tittle" class="form-control" placeholder="Enter your new title...">
+            <input type="text" id="3" name="description" class="form-control" placeholder="Enter your new description...">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
     <script type="module" src="/js/main.js"></script>
-    
 </body>
 </html>
