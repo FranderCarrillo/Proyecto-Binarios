@@ -1,4 +1,4 @@
-// import * as headerService from "./services/header/header.service.js";
+import * as headerService from "./services/header/header.service.js";
 import * as landingServicesService from "./services/landingServices/landingServices.service.js";
 
 // const text = "Welcome to Ionic Motors";
@@ -37,15 +37,15 @@ import * as landingServicesService from "./services/landingServices/landingServi
             const { icons, tittle, description } = LandingService;
 
             // Crear un nuevo objeto con los atributos seleccionados
-            const datosFiltrados = { icons, tittle, description };
+            const datosFiltrados1 = { icons, tittle, description };
 
             // Mostrar el resultado en la consola o utilizarlo en el DOM
-            console.log(datosFiltrados); // { nombre: "Juan", edad: 25 }
+            console.log(datosFiltrados1); // { nombre: "Juan", edad: 25 }
 
             // Ejemplo: Mostrar en HTML
-            document.getElementById("icon-1").innerHTML = datosFiltrados.icons;
-            document.getElementById("tittle-1").innerHTML = datosFiltrados.tittle;
-            document.getElementById("p-1").innerHTML = datosFiltrados.description;
+            document.getElementById("icon-1").innerHTML = datosFiltrados1.icons;
+            document.getElementById("tittle-1").innerHTML = datosFiltrados1.tittle;
+            document.getElementById("p-1").innerHTML = datosFiltrados1.description;
         })
 
 
@@ -60,15 +60,15 @@ import * as landingServicesService from "./services/landingServices/landingServi
             const { icons, tittle, description } = LandingService;
 
             // Crear un nuevo objeto con los atributos seleccionados
-            const datosFiltrados = { icons, tittle, description };
+            const datosFiltrados2 = { icons, tittle, description };
 
             // Mostrar el resultado en la consola o utilizarlo en el DOM
-            console.log(datosFiltrados); // { nombre: "Juan", edad: 25 }
+            console.log(datosFiltrados2); // { nombre: "Juan", edad: 25 }
 
             // Ejemplo: Mostrar en HTML
-            document.getElementById("icon-2").innerHTML = datosFiltrados.icons;
-            document.getElementById("tittle-2").innerHTML = datosFiltrados.tittle;
-            document.getElementById("p-2").innerHTML = datosFiltrados.description;
+            document.getElementById("icon-2").innerHTML = datosFiltrados2.icons;
+            document.getElementById("tittle-2").innerHTML = datosFiltrados2.tittle;
+            document.getElementById("p-2").innerHTML = datosFiltrados2.description;
         })
 
 
@@ -83,27 +83,49 @@ import * as landingServicesService from "./services/landingServices/landingServi
             const { icons, tittle, description } = LandingService;
 
             // Crear un nuevo objeto con los atributos seleccionados
-            const datosFiltrados = { icons, tittle, description };
+            const datosFiltrados3 = { icons, tittle, description };
 
             // Mostrar el resultado en la consola o utilizarlo en el DOM
-            console.log(datosFiltrados); // { nombre: "Juan", edad: 25 }
+            console.log(datosFiltrados3); // { nombre: "Juan", edad: 25 }
 
             // Ejemplo: Mostrar en HTML
-            document.getElementById("icon-3").innerHTML = datosFiltrados.icons;
-            document.getElementById("tittle-3").innerHTML = datosFiltrados.tittle;
-            document.getElementById("p-3").innerHTML = datosFiltrados.description;
+            document.getElementById("icon-3").innerHTML = datosFiltrados3.icons;
+            document.getElementById("tittle-3").innerHTML = datosFiltrados3.tittle;
+            document.getElementById("p-3").innerHTML = datosFiltrados3.description;
+        })
+
+        headerService.getById(1)
+        .then(res=>res.json())
+        .then(header=>{
+            console.log(header);
+            //spanResponseId.innerHTML = JSON.stringify(user);
+
+            // Prueba
+            // Extraer solo los atributos que necesitamos
+            const { title, description, image } = header;
+
+            // Crear un nuevo objeto con los atributos seleccionados
+            const datosHearder = { title, description, image };
+
+            // Mostrar el resultado en la consola o utilizarlo en el DOM
+            console.log(datosHearder); // { nombre: "Juan", edad: 25 }
+
+            // Ejemplo: Mostrar en HTML
+            document.getElementById("icon-1").innerHTML = datosHearder.title;
+            document.getElementById("tittle-1").innerHTML = datosHearder.description;
+            document.getElementById("p-1").innerHTML = datosHearder.image;
         })
         
         // const form = document.getElementById('frmUser');
         // form.addEventListener('submit', (event)=>{
             
-        //     var formData = new FormData(form);
-        //     const FormProps = Object.fromEntries(formData);
+        //      var formData = new FormData(form);
+        //      const FormProps = Object.fromEntries(formData);
     
-        //     console.log(FormProps);
-        //     userService.update(FormProps);
+        //      console.log(FormProps);
+        //      userService.update(FormProps);
     
-        //     event.preventDefault();
+        //      event.preventDefault();
     
         // })
     
