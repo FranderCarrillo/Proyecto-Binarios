@@ -54,10 +54,31 @@ input[type="text"] {
     transition: border-color 0.3s;
 }
 
+textarea{
+    resize: none; 
+    /* width: 400px; */
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+
+    font-family: Arial, sans-serif;
+}
+
 input[type="text"]:focus {
     border-color: #4a90e2;
     outline: none;
 }
+
+textarea:focus{
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* .frmDescription{
+    height: 50px;
+} */
 
 button {
     padding: 10px;
