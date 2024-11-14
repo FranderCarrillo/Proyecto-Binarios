@@ -10,15 +10,14 @@
     font-style: normal;
 }
  #main-section-samu #img1{
-    background-size: cover; 
-    background-position: center;
-    content: ""; 
     position: absolute;
+    background-position: center;
+    object-fit: cover;
     width: 100%;
     height: 100%; 
     padding: 0;
     margin: 0;
-    filter: blur(7px);
+    filter: blur(5px);
     z-index: -1;
 }  
 .My-section-left{
