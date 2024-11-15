@@ -2,7 +2,7 @@
 #parte-brenda-sobre{
     display:flex;
     flex-direction:column;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     background-color: #E5E7E6;
 }

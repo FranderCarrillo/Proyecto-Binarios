@@ -3,9 +3,11 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: 20vw;
+    /* width: 100vw;
+    height: 20vw; */
     
+    height: 20vh;
+    width: 100%;
 }
 
 .footer-container {
